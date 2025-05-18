@@ -1,0 +1,265 @@
+/* General Styles */
+.admin-dashboard {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.8em;
+  margin: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dashboard-header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+/* Job Creation Section */
+.job-creation {
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.job-creation:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.job-creation h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.job-creation form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job-creation label {
+  font-weight: bold;
+  color: #34495e;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  flex: 1 1 100%;
+}
+
+.job-creation input,
+.job-creation textarea,
+.job-creation select {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 2px solid #dfe4ea;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f7f9fc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.job-creation input:focus,
+.job-creation textarea:focus,
+.job-creation select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.job-creation textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.job-creation button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.job-creation button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-creation button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Job Management Section */
+.job-management {
+  margin-bottom: 40px;
+}
+
+.job-management h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.job-table th,
+.job-table td {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+}
+
+.job-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.job-table td {
+  background-color: #f9fafb;
+  font-size: 0.95em;
+}
+
+.job-table tr:hover td {
+  background-color: #dfe6e9;
+  transition: background-color 0.3s ease;
+}
+
+/* Applications Management Section */
+.applications-management {
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.applications-management h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.applications-table th,
+.applications-table td {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+}
+
+.applications-table th {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.applications-table td {
+  background-color: #f7f9fc;
+  font-size: 0.95em;
+}
+
+.applications-table tr:hover td {
+  background-color: #f1c40f;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Modal Section */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.edit-modal h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #34495e;
+  text-transform: uppercase;
+}
+
+.edit-modal label {
+  display: block;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.edit-modal input,
+.edit-modal textarea,
+.edit-modal select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 2px solid #dfe4ea;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f7f9fc;
+}
+
+.edit-modal button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-modal button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.edit-modal button:active {
+  transform: translateY(0);
+}

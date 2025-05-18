@@ -1,0 +1,277 @@
+/* General Styles for the Landing Page */
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .cta-button:hover {
+    background-color: #1e7e34; /* Smooth color transition */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  /* Features Section */
+  .features-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .features-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #0056b3; /* Styled heading color */
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature {
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px); /* Adds interactivity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Testimonials Section (If any text follows the hero section) */
+  .testimonials-section {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0056b3;
+  }
+  
+  .testimonials-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  /* Call-to-Action Section */
+.cta-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #0056b3; /* A bold, contrasting background color */
+    color: #fff;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green background for the button */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1e7e34; /* Darker green for hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles for Small Devices */
+  @media (max-width: 1024px) {
+    .hero-section {
+      padding: 2.5rem 1rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  
+    .cta-button {
+      padding: 0.7rem 1.3rem;
+      font-size: 1rem;
+    }
+  
+    .features-section h2 {
+      font-size: 2rem;
+    }
+  
+    .features {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .features {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .feature {
+      width: 90%; /* Adjust width for better fit on small screens */
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+  
+    .features-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .feature {
+      max-width: 95%;
+      padding: 1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .cta-section {
+      padding: 2rem 1rem;
+    }
+  
+    .cta-section h2 {
+      font-size: 2rem;
+    }
+  
+    .cta-section p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .cta-section p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      font-size: 0.8rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  
